@@ -16,7 +16,7 @@ print('(\\___/)')
 print('''(='.'=)''')
 print('(")_(")\n')
 
-# Задание 5
+# Задание 5 (Программа 2, но состоит из одной строки)
 print('Привет, Python!', 'Hello, Python!', 'Bonjour, Python!', 'Hej, Python!', 'Hola, Python!\n', sep='\n')
 
 # Задание 6
