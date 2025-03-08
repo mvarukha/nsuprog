@@ -7,6 +7,7 @@ else:
     print('Доступ запрещен!')
 
 # Задание 2
+
 # Задание 5
 fisher1 = int(input())
 fisher2 = int(input())
@@ -15,7 +16,32 @@ if fisher1 < fisher2:
     print(fisher1)
 else:
     print(fisher2)
-  
+
+# Задание 8
+computer_age = 78
+print('Здравствуйте! Как Вас зовут?')
+name = input()
+print('Очень приятно, ' + str(name) + '! Меня зовут Марк.')
+print('Сколько Вам лет?')
+human_age = int(input())
+
+if human_age < computer_age:
+    difference = computer_age - human_age
+else:
+    difference = human_age - computer_age
+
+if human_age < computer_age:
+    print('Да, ' + str(name) + ', я старше Вас на ' + str(difference) + ' лет.')
+else:
+    print('Да, ' + str(name) + ', Вы старше меня на ' + str(difference) + ' лет.')
+
+print('Вам нравится программировать?')
+like = input()
+if like == 'Да' or like == 'да':
+    print('Превосходно! Уверен, у Вас получится написать множество полезных и хороших программ.')
+else:
+    print('Жаль. Я думал, Вы сможете написать интересную программу для меня.')
+    
 # Задание 9
 print('Собака короткошерстной породы?')
 wool = input()
