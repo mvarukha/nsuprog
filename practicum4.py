@@ -22,6 +22,14 @@ if name.lower() == 'джеймс бонд' or name.lower() == 'агент 007':
     print('Верно')
 else:
     print('Неверно')
+
+# Задание 4
+print('Вы поедете на бал?')
+answer = input('Ответ: ').lower()
+if not (answer == 'да' or answer == 'нет'):
+    print('Верно')
+else:
+    print('Неверно')
     
 # Задание 5
 fisher1 = int(input())
@@ -31,6 +39,28 @@ if fisher1 < fisher2:
     print(fisher1)
 else:
     print(fisher2)
+
+# Задание 6
+score_input = input('Введите счёт через двоеточние (например, 2:1)')
+team1_score, team2_score = map(int, score_input.split(':'))
+
+if team1_score > team2_score:
+    print('1')
+elif team2_score > team1_score:
+    print('2')
+else:
+    print('0')
+
+# Задание 7
+records_input = input('Введите рекорд Кирилла, Арины и Сергея через пробел: ')
+kirill, arina, sergey = map(int, records_input.split(' '))
+
+if kirill > arina and kirill > sergey:
+    print(kirill)
+if arina > kirill and arina > sergey:
+    print(arina)
+if sergey > kirill and sergey > arina:
+    print(sergey)
 
 # Задание 8
 computer_age = 78
