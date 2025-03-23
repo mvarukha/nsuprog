@@ -1,3 +1,22 @@
+# Задание 1
+import math
+
+def carpet_fit(size):
+    A, B = map(int, size.split('x'))  # Разделяем входные данные на A и B
+    diameter = 13
+    diagonal = math.sqrt(A**2 + B**2)  # диагональ ковра
+
+    if diagonal <= diameter:
+        return "да"
+    else:
+        return "нет"
+
+size_input = input("Введите размер ковровой дорожки (A x B): ")
+result = carpet_fit(size_input)
+print(result)
+
+# Задание 2
+
 # Задание 3
 # Подсказка для ввода
 print("Введите размеры района в формате NxM:")
