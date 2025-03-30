@@ -11,7 +11,17 @@ while number <= 999:
 print(' '.join(result))
 print(count)
 
+
 # Задание 2
+input_str = input("Введите строку: ")
+output_str = ""
+
+for i in range(2, len(input_str), 3):  # начало=2, шаг=3
+    output_str += input_str[i]
+
+print("Результат:", output_str)
+
+
 # Задание 3
 import math
 
@@ -26,6 +36,7 @@ while True:
     else:
         print(f"Число {num} не является полным квадратом. Попробуйте ещё раз.")
 
+
 # Задание 4
 
 X = int(input("Введите целое число X: "))
@@ -35,6 +46,7 @@ sum_numbers = X * (X + 1) // 2
 
 # Выводим результат
 print(f"Сумма первых {X} натуральных чисел равна: {sum_numbers}")
+
 
 # Задание 5
 N = int(input("Введите максимальный объём N (в куб. см): "))
@@ -51,6 +63,7 @@ while True:
 
 print("Объёмы кубиков:", ' '.join(map(str, volumes)))
 
+
 # Задание 6
 N = int(input("Введите максимальное количество подписчиков N: "))
 
@@ -61,6 +74,7 @@ while subscribers <= N:
     print(subscribers)
     subscribers *= 2  # удваиваем количество подписчиков
     hour += 1         # переходим к следующему часу
+
 
 # Задание 7
 answer = int(input("Введите ответ Оли: "))
@@ -75,6 +89,7 @@ else:
     else:
         print("неверно")
 
+
 # Задание 8
 import math
 
@@ -85,6 +100,7 @@ if N < 1:
 else:
     min_questions = math.ceil(math.log2(N))
     print(f"Минимальное количество вопросов: {min_questions}")
+
 
 # Задание 9
 # Ввод данных (N, K, R)
@@ -98,6 +114,7 @@ while current < R:
     day += 1                  # Переходим к следующему дню
 
 print(day)
+
 
 # Задание 10
 decrease_count = 0
