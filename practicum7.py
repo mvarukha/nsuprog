@@ -1,3 +1,17 @@
+# Задание 1
+number = 100  # начинаем с первого трёхзначного числа
+count = 0     # счетчик чисел делящихся на 17
+result = []   # список для хранения подходящих чисел
+
+while number <= 999:
+    if number % 17 == 0: 
+        result.append(str(number)) 
+        count += 1
+    number += 1  # переход к следующему числу
+print(' '.join(result))
+print(count)
+
+# Задание 2
 # Задание 3
 import math
 
